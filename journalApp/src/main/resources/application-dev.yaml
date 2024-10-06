@@ -1,0 +1,29 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://rutujaganpat98:4AWE1KMdBHq8FWV3@cluster0.uppdn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      database: mydb
+      auto-index-creation : true
+
+server:
+  port: 8080
+#  servlet:
+#    context-path: /journal
+
+#logging:
+#  level:
+#    net:
+#      edigest:
+#        journalApp: ERROR
+
+#logging:
+#  level:
+#    root: OFF
+
+#logging:
+#  level:
+#    net:
+#      edigest:
+#        journalApp:
+#          service:
+#            UserService: DEBUG
