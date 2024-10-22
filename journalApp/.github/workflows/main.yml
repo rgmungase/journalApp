@@ -18,7 +18,7 @@ jobs:
           java-version: 17
 
       - name: Unit test
-        run: mvn -B test --file pom.xml
+        run: mvn clean tests
 
       - name: Package and build
         run: |
