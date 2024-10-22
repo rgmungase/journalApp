@@ -21,9 +21,16 @@ public class UserController {
 
     @GetMapping
     public ResponseEntity<?> getAllUser() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         return new ResponseEntity<>(userService.getAllUsers(), HttpStatus.OK);
     }
 
+
+    @GetMapping("/greetings")
+    public ResponseEntity<?> greetings() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        return new ResponseEntity<>("Hi " +authentication.getName(), HttpStatus.OK);
+    }
 
 
     @PutMapping
