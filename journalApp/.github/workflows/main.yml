@@ -23,7 +23,6 @@ jobs:
       - name: Package and build
         run: |
           mvn clean
-          mvn -B package --file pom.xml
-          
+          mvn package 
           
           
