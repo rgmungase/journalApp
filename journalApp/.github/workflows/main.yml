@@ -1,7 +1,9 @@
 name: Build & deploy spring app
 
 on:
-  workflow_dispatch
+  push:
+    branches:
+      - main
 
 jobs:
   build-deploy:
